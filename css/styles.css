@@ -1,0 +1,167 @@
+/* # Front-end Style Guide
+
+## Layout
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+## Colors
+
+### Primary
+
+- Cyan: hsl(179, 62%, 43%)
+- Bright Yellow: hsl(71, 73%, 54%)
+
+### Neutral
+
+- Light Gray: hsl(204, 43%, 93%)
+- Grayish Blue: hsl(218, 22%, 67%)
+
+## Typography
+
+### Body Copy
+
+- Font size: 16px
+
+### Font
+
+- Family: [Karla](https://fonts.google.com/specimen/Karla)
+- Weights: 400, 700 */
+
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+  font-family: 'Karla', sans-serif;
+  height: 100vh;
+  font-weight: 400;
+  background: hsl(218, 22%, 67%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* overflow-y: hidden; */
+}
+
+.container{
+  width: 50%;
+  /* height: 90%; */
+  margin: auto;
+  background-color: #fff;
+  /* padding: 2.25rem 3.25rem; */
+  border-radius: 10px;
+  box-shadow: 20px 30px 25px rgba(0, 0, 0, 0.15);
+  display: flex;
+  flex-direction: column;
+}
+
+.container .box-1,
+.container .box-2{
+  width: 100%;
+  height: 50%;
+  /* border: 2px solid red; */
+}
+.box-1{
+  padding: 2rem;
+}
+.box-1 h1{
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color:hsl(179, 62%, 43%);
+}
+.box-1 h2{
+  font-size: 0.9rem;
+  font-weight: 700;
+  margin-bottom: 0.8rem;
+  color:hsl(71, 73%, 54%)
+}
+.box-1 p{
+  font-size: 0.9rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color:hsl(218, 22%, 67%);
+}
+.box-2{
+  display: flex;
+}
+
+.box-2 .item-1,
+.box-2 .item-2{
+  width:100%;
+  height: 100%;
+  color: #fff;
+  background-color: hsl(180, 63%, 27%) ;
+  padding: 2rem 0 2rem 2rem;
+}
+.box-2 .item-1{
+  border-bottom-left-radius: 10px;
+}
+.box-2 .item-1 h2,
+.box-2 .item-2 h2{
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 0.8rem;
+}
+.box-2 .item-1 p,
+.box-2 .item-2 p{
+  font-size:0.75rem;
+  font-weight: 400;
+  line-height: 2.5;
+  margin-bottom: 1.15rem;
+}
+
+.box-2 .item-1 .btn{
+  width: 70%;
+  padding: 0.8rem  ;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  font-weight: 700;
+  background-color:hsl(71, 73%, 54%);
+}
+
+.box-2 .item-2{
+  /* padding: 1.6rem; */
+  background-color: hsl(179, 62%, 43%) ;
+  border-bottom-right-radius: 10px;
+}
+
+.box-2 .item-2 p{
+  line-height: 1.25;
+  max-width: 90%;
+  margin-bottom:2px;
+  font-size: 0.75rem;
+}
+
+@media screen  and (max-width:991px){
+  .container{
+    width: 70%;
+    flex-direction: column;
+  }
+  .box-2{
+    display: flex;
+    flex-direction: column;
+  }
+  .box-2 .item-1{
+    text-align: center;
+  }
+}
+@media screen  and (max-width:375px){
+  .container{
+    width: 80%;
+    flex-direction: column;
+  }
+  .box-2 .item-1{
+    text-align:left;
+  }
+}
